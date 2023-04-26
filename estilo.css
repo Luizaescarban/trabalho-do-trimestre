@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+header {
+  background-color: white;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  text-align: left;
+}
+
+a:link,
+a:visited {
+  background-color: #000000;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(38, 28, 136);
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 0%;
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 16px;
+  margin: 0%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(70, 89, 196);
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+body {
+  margin-bottom: 0%;
+}
